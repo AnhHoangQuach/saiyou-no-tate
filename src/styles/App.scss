@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'styles/_components.scss';
+@import 'styles/_mui.scss';
+
+body {
+  background: #fff;
+  height: 100vh;
+}
+
+:root {
+  --color-primary-main: #1E1D4C;
+  --color-secondary-main: #F1A501;
+}
+
+* {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}

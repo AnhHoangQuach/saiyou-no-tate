@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "prettier",
+    "perfectionist"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:perfectionist/recommended-alphabetical"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "prettier/prettier": "warn",
+    "perfectionist/sort-objects": "warn",
+    "perfectionist/sort-jsx-props": "warn"
+  }
+}
