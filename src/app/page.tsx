@@ -64,6 +64,39 @@ const Home = () => {
           </Box>
         </div>
       </div>
+      <div className="layers flex min-h-[600px] items-center justify-center">
+        <div className="background">
+          <div className="layer1"></div>
+          <div className="layer2"></div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-7">
+          <div className="text-5xl font-bold">各種お問い合わせはこちら</div>
+          <div className="font-bold">お気軽にご連絡ください。</div>
+          <div className="flex items-center justify-between gap-[10px] text-white">
+            <Button
+              className="flex h-[50px] w-[200px] rounded-md border border-white bg-primary-main text-white"
+              startIcon={<TextSnippetOutlined />}
+              variant="outlined"
+            >
+              資料請求
+            </Button>
+            <Button
+              className="flex h-[50px] w-[200px] rounded-md border border-white bg-[#000] text-white"
+              startIcon={<TextSnippetOutlined />}
+              variant="outlined"
+            >
+              資料請求
+            </Button>
+            <Button
+              className="flex h-[50px] w-[200px] rounded-md border border-white bg-secondary-main text-white"
+              startIcon={<TextSnippetOutlined />}
+              variant="outlined"
+            >
+              資料請求
+            </Button>
+          </div>
+        </div>
+      </div>
       <div className="bg-[#fdf3f4]">
         <QAComponent />
       </div>

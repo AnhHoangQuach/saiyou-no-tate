@@ -1,0 +1,34 @@
+//BG 2 layer
+.layers {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    .layer1 {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../assets/images/bg-layer1.png") no-repeat center center/cover;
+    }
+    .layer2 {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../assets/images/bg-layer2.png") no-repeat center center/cover;
+    }
+  }
+}
