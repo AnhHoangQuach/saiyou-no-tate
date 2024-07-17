@@ -2,47 +2,31 @@ import type { Metadata } from "next"
 
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter"
 import { AppLayout, AppProvider } from "containers"
-import { Roboto_Slab } from "next/font/google"
-import localFont from "next/font/local"
+import { Inter, Noto_Sans_JP } from "next/font/google"
 import { PropsWithChildren } from "react"
 import "styles/App.scss"
 
-export const ad_font = localFont({
-  src: [
-    {
-      path: "../assets/fonts/AD-Pro-Text-Regular.otf",
-      style: "regular",
-      weight: "400",
-    },
-    {
-      path: "../assets/fonts/AD-Pro-Text-Medium.otf",
-      style: "medium",
-      weight: "500",
-    },
-    {
-      path: "../assets/fonts/AD-Pro-Text-Bold.otf",
-      style: "bold",
-      weight: "700",
-    },
-  ],
-  variable: "--font-ad-pro-text",
+export const notoSansJP = Noto_Sans_JP({
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
 })
 
-export const roboto_slab = Roboto_Slab({
+export const inter = Inter({
   display: "swap",
-  subsets: ["vietnamese"],
-  variable: "--font-roboto-slab",
+  subsets: ["latin"],
+  variable: "--font-inter",
 })
 
 export const metadata: Metadata = {
-  description: `Airdata là hệ thống quản lý bán vé máy bay hàng đầu tại Việt Nam mang đến một loạt các tính năng và tiện ích độc đáo, nhằm tạo lợi ích tối đa cho doanh nghiệp trong việc quản lý và điều hành bán vé máy bay.`,
-  title: `Airdata - Hệ thống đặt vé đại lý hiện đại`,
+  description: ``,
+  title: ``,
 }
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${ad_font.variable} ${roboto_slab.variable}`}>
+      <body className={`${notoSansJP.variable} ${inter.variable}`}>
         <AppRouterCacheProvider>
           <AppProvider>
             <AppLayout>{children}</AppLayout>

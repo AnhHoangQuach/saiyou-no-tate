@@ -22,8 +22,8 @@ const config: Config = {
       },
     },
     fontFamily: {
-      ad: ["var(--font-ad-pro-text)"],
-      slab: ["var(--font-roboto-slab)"],
+      inter: ["var(--font-inter)"],
+      jp: ["var(--font-noto-sans-jp)"],
     },
   },
 }

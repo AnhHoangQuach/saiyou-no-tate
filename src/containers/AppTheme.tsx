@@ -62,13 +62,10 @@ const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#1E1D4C",
+      main: "#F25B54",
     },
     secondary: {
-      main: "#F1A501",
-    },
-    success: {
-      main: "#8FD00A",
+      main: "#01B202",
     },
   },
   shape: {
@@ -76,7 +73,7 @@ const theme = createTheme({
   },
   typography: {
     button: { fontWeight: 700, textTransform: "none" },
-    fontFamily: "var(--font-ad-pro-text)",
+    fontFamily: "var(--font-inter)",
   },
 })
 
